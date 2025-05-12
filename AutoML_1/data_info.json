@@ -1,0 +1,44 @@
+{
+    "columns": [
+        "gender",
+        "age",
+        "hypertension",
+        "heart_disease",
+        "smoking_history",
+        "bmi",
+        "HbA1c_level",
+        "blood_glucose_level"
+    ],
+    "rows": 80000,
+    "cols": 8,
+    "target_is_numeric": true,
+    "columns_info": {
+        "gender": [
+            "categorical",
+            "few_categories"
+        ],
+        "age": [
+            "scale"
+        ],
+        "hypertension": [],
+        "heart_disease": [],
+        "smoking_history": [
+            "categorical",
+            "few_categories"
+        ],
+        "bmi": [
+            "scale"
+        ],
+        "HbA1c_level": [
+            "scale"
+        ],
+        "blood_glucose_level": [
+            "scale"
+        ]
+    },
+    "target_info": [],
+    "n_features": 8,
+    "is_sample_weighted": false,
+    "is_fairness_applied": false,
+    "n_classes": 2
+}
