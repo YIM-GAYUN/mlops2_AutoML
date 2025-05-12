@@ -6,7 +6,7 @@ sources: https://www.kaggle.com/datasets/iammustafatz/diabetes-prediction-datase
 [Table of Contents]
 1. Data Preparation <br>
 2. AutoML(-> MLJAR) Configuration & Run <br>
-3. Predict <br>
+3. Predict
 <br><br><br>
 
 :clipboard: requirements.txt <br>
