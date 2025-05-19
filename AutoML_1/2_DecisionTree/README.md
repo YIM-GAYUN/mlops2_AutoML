@@ -6,12 +6,12 @@
 ## Decision Tree
 - **n_jobs**: -1
 - **criterion**: gini
-- **max_depth**: 3
-- **explain_level**: 2
+- **max_depth**: 4
+- **explain_level**: 1
 
 ## Validation
- - **validation_type**: split
- - **train_ratio**: 0.75
+ - **validation_type**: kfold
+ - **k_folds**: 5
  - **shuffle**: True
  - **stratify**: True
 
@@ -20,37 +20,37 @@ logloss
 
 ## Training time
 
-60.9 seconds
+48.8 seconds
 
 ## Metric details
 |           |    score |   threshold |
 |:----------|---------:|------------:|
-| logloss   | 0.116766 | nan         |
-| auc       | 0.902468 | nan         |
-| f1        | 0.801973 |   0.0687019 |
-| accuracy  | 0.9719   |   0.0687019 |
-| precision | 1        |   0.0687019 |
-| recall    | 1        |   0.0110152 |
-| mcc       | 0.805895 |   0.0687019 |
+| logloss   | 0.105097 |  nan        |
+| auc       | 0.936293 |  nan        |
+| f1        | 0.800811 |    0.112737 |
+| accuracy  | 0.971762 |    0.112737 |
+| precision | 1        |    0.112737 |
+| recall    | 1        |    0        |
+| mcc       | 0.804862 |    0.112737 |
 
 
 ## Metric details with threshold from accuracy metric
 |           |    score |   threshold |
 |:----------|---------:|------------:|
-| logloss   | 0.116766 | nan         |
-| auc       | 0.902468 | nan         |
-| f1        | 0.801973 |   0.0687019 |
-| accuracy  | 0.9719   |   0.0687019 |
-| precision | 1        |   0.0687019 |
-| recall    | 0.669412 |   0.0687019 |
-| mcc       | 0.805895 |   0.0687019 |
+| logloss   | 0.105097 |  nan        |
+| auc       | 0.936293 |  nan        |
+| f1        | 0.800811 |    0.112737 |
+| accuracy  | 0.971762 |    0.112737 |
+| precision | 1        |    0.112737 |
+| recall    | 0.667794 |    0.112737 |
+| mcc       | 0.804862 |    0.112737 |
 
 
-## Confusion matrix (at threshold=0.068702)
+## Confusion matrix (at threshold=0.112737)
 |              |   Predicted as 0 |   Predicted as 1 |
 |:-------------|-----------------:|-----------------:|
-| Labeled as 0 |            18300 |                0 |
-| Labeled as 1 |              562 |             1138 |
+| Labeled as 0 |            73200 |                0 |
+| Labeled as 1 |             2259 |             4541 |
 
 ## Learning curves
 ![Learning curves](learning_curves.png)

@@ -6,37 +6,38 @@
 ## Ensemble structure
 | Model             |   Weight |
 |:------------------|---------:|
-| 3_Default_Xgboost |        5 |
+| 4_Default_Xgboost |       10 |
+| 7_Xgboost         |        3 |
 
 ## Metric details
 |           |     score |     threshold |
 |:----------|----------:|--------------:|
-| logloss   | 0.0774915 | nan           |
-| auc       | 0.980488  | nan           |
-| f1        | 0.807175  |   0.475878    |
-| accuracy  | 0.97205   |   0.475878    |
-| precision | 1         |   0.999138    |
-| recall    | 1         |   1.05739e-05 |
-| mcc       | 0.806651  |   0.475878    |
+| logloss   | 0.0789624 | nan           |
+| auc       | 0.979507  | nan           |
+| f1        | 0.806966  |   0.472006    |
+| accuracy  | 0.972012  |   0.472006    |
+| precision | 1         |   0.99912     |
+| recall    | 1         |   1.23171e-05 |
+| mcc       | 0.806367  |   0.472006    |
 
 
 ## Metric details with threshold from accuracy metric
 |           |     score |   threshold |
 |:----------|----------:|------------:|
-| logloss   | 0.0774915 |  nan        |
-| auc       | 0.980488  |  nan        |
-| f1        | 0.807175  |    0.475878 |
-| accuracy  | 0.97205   |    0.475878 |
-| precision | 0.975813  |    0.475878 |
-| recall    | 0.688235  |    0.475878 |
-| mcc       | 0.806651  |    0.475878 |
+| logloss   | 0.0789624 |  nan        |
+| auc       | 0.979507  |  nan        |
+| f1        | 0.806966  |    0.472006 |
+| accuracy  | 0.972012  |    0.472006 |
+| precision | 0.975203  |    0.472006 |
+| recall    | 0.688235  |    0.472006 |
+| mcc       | 0.806367  |    0.472006 |
 
 
-## Confusion matrix (at threshold=0.475878)
+## Confusion matrix (at threshold=0.472006)
 |              |   Predicted as 0 |   Predicted as 1 |
 |:-------------|-----------------:|-----------------:|
-| Labeled as 0 |            18271 |               29 |
-| Labeled as 1 |              530 |             1170 |
+| Labeled as 0 |            73081 |              119 |
+| Labeled as 1 |             2120 |             4680 |
 
 ## Learning curves
 ![Learning curves](learning_curves.png)

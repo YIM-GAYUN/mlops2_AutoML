@@ -1,0 +1,663 @@
+{
+    "uid": "7ce46ba1-6477-4261-8c31-be09292480a5",
+    "name": "8_Xgboost",
+    "preprocessing": [
+        {
+            "categorical": [
+                {
+                    "convert_method": "categorical_to_int",
+                    "convert_params": {
+                        "gender_Female": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "gender_Male": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "gender_Other": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "smoking_history_No Info": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "smoking_history_current": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "smoking_history_ever": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "smoking_history_former": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "smoking_history_never": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "smoking_history_not current": {
+                            "False": 0,
+                            "True": 1
+                        }
+                    },
+                    "columns": [
+                        "gender_Female",
+                        "gender_Male",
+                        "gender_Other",
+                        "smoking_history_No Info",
+                        "smoking_history_current",
+                        "smoking_history_ever",
+                        "smoking_history_former",
+                        "smoking_history_never",
+                        "smoking_history_not current"
+                    ]
+                }
+            ],
+            "ml_task": "binary_classification",
+            "params": {
+                "columns_preprocessing": {
+                    "gender_Female": [
+                        "categorical_to_int"
+                    ],
+                    "gender_Male": [
+                        "categorical_to_int"
+                    ],
+                    "gender_Other": [
+                        "categorical_to_int"
+                    ],
+                    "smoking_history_No Info": [
+                        "categorical_to_int"
+                    ],
+                    "smoking_history_current": [
+                        "categorical_to_int"
+                    ],
+                    "smoking_history_ever": [
+                        "categorical_to_int"
+                    ],
+                    "smoking_history_former": [
+                        "categorical_to_int"
+                    ],
+                    "smoking_history_never": [
+                        "categorical_to_int"
+                    ],
+                    "smoking_history_not current": [
+                        "categorical_to_int"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude"
+                ],
+                "ml_task": "binary_classification"
+            }
+        },
+        {
+            "categorical": [
+                {
+                    "convert_method": "categorical_to_int",
+                    "convert_params": {
+                        "gender_Female": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "gender_Male": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "gender_Other": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "smoking_history_No Info": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "smoking_history_current": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "smoking_history_ever": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "smoking_history_former": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "smoking_history_never": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "smoking_history_not current": {
+                            "False": 0,
+                            "True": 1
+                        }
+                    },
+                    "columns": [
+                        "gender_Female",
+                        "gender_Male",
+                        "gender_Other",
+                        "smoking_history_No Info",
+                        "smoking_history_current",
+                        "smoking_history_ever",
+                        "smoking_history_former",
+                        "smoking_history_never",
+                        "smoking_history_not current"
+                    ]
+                }
+            ],
+            "ml_task": "binary_classification",
+            "params": {
+                "columns_preprocessing": {
+                    "gender_Female": [
+                        "categorical_to_int"
+                    ],
+                    "gender_Male": [
+                        "categorical_to_int"
+                    ],
+                    "gender_Other": [
+                        "categorical_to_int"
+                    ],
+                    "smoking_history_No Info": [
+                        "categorical_to_int"
+                    ],
+                    "smoking_history_current": [
+                        "categorical_to_int"
+                    ],
+                    "smoking_history_ever": [
+                        "categorical_to_int"
+                    ],
+                    "smoking_history_former": [
+                        "categorical_to_int"
+                    ],
+                    "smoking_history_never": [
+                        "categorical_to_int"
+                    ],
+                    "smoking_history_not current": [
+                        "categorical_to_int"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude"
+                ],
+                "ml_task": "binary_classification"
+            }
+        },
+        {
+            "categorical": [
+                {
+                    "convert_method": "categorical_to_int",
+                    "convert_params": {
+                        "gender_Female": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "gender_Male": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "gender_Other": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "smoking_history_No Info": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "smoking_history_current": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "smoking_history_ever": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "smoking_history_former": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "smoking_history_never": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "smoking_history_not current": {
+                            "False": 0,
+                            "True": 1
+                        }
+                    },
+                    "columns": [
+                        "gender_Female",
+                        "gender_Male",
+                        "gender_Other",
+                        "smoking_history_No Info",
+                        "smoking_history_current",
+                        "smoking_history_ever",
+                        "smoking_history_former",
+                        "smoking_history_never",
+                        "smoking_history_not current"
+                    ]
+                }
+            ],
+            "ml_task": "binary_classification",
+            "params": {
+                "columns_preprocessing": {
+                    "gender_Female": [
+                        "categorical_to_int"
+                    ],
+                    "gender_Male": [
+                        "categorical_to_int"
+                    ],
+                    "gender_Other": [
+                        "categorical_to_int"
+                    ],
+                    "smoking_history_No Info": [
+                        "categorical_to_int"
+                    ],
+                    "smoking_history_current": [
+                        "categorical_to_int"
+                    ],
+                    "smoking_history_ever": [
+                        "categorical_to_int"
+                    ],
+                    "smoking_history_former": [
+                        "categorical_to_int"
+                    ],
+                    "smoking_history_never": [
+                        "categorical_to_int"
+                    ],
+                    "smoking_history_not current": [
+                        "categorical_to_int"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude"
+                ],
+                "ml_task": "binary_classification"
+            }
+        },
+        {
+            "categorical": [
+                {
+                    "convert_method": "categorical_to_int",
+                    "convert_params": {
+                        "gender_Female": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "gender_Male": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "gender_Other": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "smoking_history_No Info": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "smoking_history_current": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "smoking_history_ever": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "smoking_history_former": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "smoking_history_never": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "smoking_history_not current": {
+                            "False": 0,
+                            "True": 1
+                        }
+                    },
+                    "columns": [
+                        "gender_Female",
+                        "gender_Male",
+                        "gender_Other",
+                        "smoking_history_No Info",
+                        "smoking_history_current",
+                        "smoking_history_ever",
+                        "smoking_history_former",
+                        "smoking_history_never",
+                        "smoking_history_not current"
+                    ]
+                }
+            ],
+            "ml_task": "binary_classification",
+            "params": {
+                "columns_preprocessing": {
+                    "gender_Female": [
+                        "categorical_to_int"
+                    ],
+                    "gender_Male": [
+                        "categorical_to_int"
+                    ],
+                    "gender_Other": [
+                        "categorical_to_int"
+                    ],
+                    "smoking_history_No Info": [
+                        "categorical_to_int"
+                    ],
+                    "smoking_history_current": [
+                        "categorical_to_int"
+                    ],
+                    "smoking_history_ever": [
+                        "categorical_to_int"
+                    ],
+                    "smoking_history_former": [
+                        "categorical_to_int"
+                    ],
+                    "smoking_history_never": [
+                        "categorical_to_int"
+                    ],
+                    "smoking_history_not current": [
+                        "categorical_to_int"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude"
+                ],
+                "ml_task": "binary_classification"
+            }
+        },
+        {
+            "categorical": [
+                {
+                    "convert_method": "categorical_to_int",
+                    "convert_params": {
+                        "gender_Female": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "gender_Male": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "gender_Other": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "smoking_history_No Info": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "smoking_history_current": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "smoking_history_ever": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "smoking_history_former": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "smoking_history_never": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "smoking_history_not current": {
+                            "False": 0,
+                            "True": 1
+                        }
+                    },
+                    "columns": [
+                        "gender_Female",
+                        "gender_Male",
+                        "gender_Other",
+                        "smoking_history_No Info",
+                        "smoking_history_current",
+                        "smoking_history_ever",
+                        "smoking_history_former",
+                        "smoking_history_never",
+                        "smoking_history_not current"
+                    ]
+                }
+            ],
+            "ml_task": "binary_classification",
+            "params": {
+                "columns_preprocessing": {
+                    "gender_Female": [
+                        "categorical_to_int"
+                    ],
+                    "gender_Male": [
+                        "categorical_to_int"
+                    ],
+                    "gender_Other": [
+                        "categorical_to_int"
+                    ],
+                    "smoking_history_No Info": [
+                        "categorical_to_int"
+                    ],
+                    "smoking_history_current": [
+                        "categorical_to_int"
+                    ],
+                    "smoking_history_ever": [
+                        "categorical_to_int"
+                    ],
+                    "smoking_history_former": [
+                        "categorical_to_int"
+                    ],
+                    "smoking_history_never": [
+                        "categorical_to_int"
+                    ],
+                    "smoking_history_not current": [
+                        "categorical_to_int"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude"
+                ],
+                "ml_task": "binary_classification"
+            }
+        }
+    ],
+    "learners": [
+        {
+            "library_version": "3.0.0",
+            "algorithm_name": "Extreme Gradient Boosting",
+            "algorithm_short_name": "Xgboost",
+            "uid": "215ee962-b8ad-4ff0-8198-4ba13f02922b",
+            "params": {
+                "model_type": "Xgboost",
+                "ml_task": "binary_classification",
+                "n_jobs": -1,
+                "seed": 1237,
+                "objective": "binary:logistic",
+                "eta": 0.1,
+                "max_depth": 7,
+                "min_child_weight": 25,
+                "subsample": 0.9,
+                "colsample_bytree": 0.6,
+                "eval_metric": "logloss",
+                "explain_level": 1
+            },
+            "name": "learner_fold_0"
+        },
+        {
+            "library_version": "3.0.0",
+            "algorithm_name": "Extreme Gradient Boosting",
+            "algorithm_short_name": "Xgboost",
+            "uid": "955d39a6-62c3-44d5-a09a-df4de22c97f9",
+            "params": {
+                "model_type": "Xgboost",
+                "ml_task": "binary_classification",
+                "n_jobs": -1,
+                "seed": 1237,
+                "objective": "binary:logistic",
+                "eta": 0.1,
+                "max_depth": 7,
+                "min_child_weight": 25,
+                "subsample": 0.9,
+                "colsample_bytree": 0.6,
+                "eval_metric": "logloss",
+                "explain_level": 1
+            },
+            "name": "learner_fold_1"
+        },
+        {
+            "library_version": "3.0.0",
+            "algorithm_name": "Extreme Gradient Boosting",
+            "algorithm_short_name": "Xgboost",
+            "uid": "31ecd34a-3172-4928-b2b8-349077ee5e29",
+            "params": {
+                "model_type": "Xgboost",
+                "ml_task": "binary_classification",
+                "n_jobs": -1,
+                "seed": 1237,
+                "objective": "binary:logistic",
+                "eta": 0.1,
+                "max_depth": 7,
+                "min_child_weight": 25,
+                "subsample": 0.9,
+                "colsample_bytree": 0.6,
+                "eval_metric": "logloss",
+                "explain_level": 1
+            },
+            "name": "learner_fold_2"
+        },
+        {
+            "library_version": "3.0.0",
+            "algorithm_name": "Extreme Gradient Boosting",
+            "algorithm_short_name": "Xgboost",
+            "uid": "7cdaec2b-1eeb-4518-a307-6aedb70e88f8",
+            "params": {
+                "model_type": "Xgboost",
+                "ml_task": "binary_classification",
+                "n_jobs": -1,
+                "seed": 1237,
+                "objective": "binary:logistic",
+                "eta": 0.1,
+                "max_depth": 7,
+                "min_child_weight": 25,
+                "subsample": 0.9,
+                "colsample_bytree": 0.6,
+                "eval_metric": "logloss",
+                "explain_level": 1
+            },
+            "name": "learner_fold_3"
+        },
+        {
+            "library_version": "3.0.0",
+            "algorithm_name": "Extreme Gradient Boosting",
+            "algorithm_short_name": "Xgboost",
+            "uid": "fa17a4f8-90ac-40c5-9849-f8f7fa5b79e7",
+            "params": {
+                "model_type": "Xgboost",
+                "ml_task": "binary_classification",
+                "n_jobs": -1,
+                "seed": 1237,
+                "objective": "binary:logistic",
+                "eta": 0.1,
+                "max_depth": 7,
+                "min_child_weight": 25,
+                "subsample": 0.9,
+                "colsample_bytree": 0.6,
+                "eval_metric": "logloss",
+                "explain_level": 1
+            },
+            "name": "learner_fold_4"
+        }
+    ],
+    "params": {
+        "additional": {
+            "max_rounds": 10000,
+            "early_stopping_rounds": 50,
+            "max_rows_limit": null,
+            "max_cols_limit": null
+        },
+        "preprocessing": {
+            "columns_preprocessing": {
+                "gender_Female": [
+                    "categorical_to_int"
+                ],
+                "gender_Male": [
+                    "categorical_to_int"
+                ],
+                "gender_Other": [
+                    "categorical_to_int"
+                ],
+                "smoking_history_No Info": [
+                    "categorical_to_int"
+                ],
+                "smoking_history_current": [
+                    "categorical_to_int"
+                ],
+                "smoking_history_ever": [
+                    "categorical_to_int"
+                ],
+                "smoking_history_former": [
+                    "categorical_to_int"
+                ],
+                "smoking_history_never": [
+                    "categorical_to_int"
+                ],
+                "smoking_history_not current": [
+                    "categorical_to_int"
+                ]
+            },
+            "target_preprocessing": [
+                "na_exclude"
+            ],
+            "ml_task": "binary_classification"
+        },
+        "validation_strategy": {
+            "validation_type": "kfold",
+            "k_folds": 5,
+            "shuffle": true,
+            "stratify": true,
+            "X_path": "AutoML_1/X.data",
+            "y_path": "AutoML_1/y.data",
+            "results_path": "AutoML_1"
+        },
+        "learner": {
+            "model_type": "Xgboost",
+            "ml_task": "binary_classification",
+            "n_jobs": -1,
+            "seed": 1237,
+            "objective": "binary:logistic",
+            "eta": 0.1,
+            "max_depth": 7,
+            "min_child_weight": 25,
+            "subsample": 0.9,
+            "colsample_bytree": 0.6,
+            "eval_metric": "logloss",
+            "explain_level": 1
+        },
+        "automl_random_state": 1234,
+        "ml_task": "binary_classification",
+        "explain_level": 1,
+        "name": "8_Xgboost",
+        "status": "initialized",
+        "final_loss": null,
+        "train_time": null,
+        "data_type": "original",
+        "max_time_for_learner": 60
+    },
+    "saved": [
+        "8_Xgboost/learner_fold_0.xgboost.json",
+        "8_Xgboost/learner_fold_1.xgboost.json",
+        "8_Xgboost/learner_fold_2.xgboost.json",
+        "8_Xgboost/learner_fold_3.xgboost.json",
+        "8_Xgboost/learner_fold_4.xgboost.json"
+    ],
+    "predictions_fname": "8_Xgboost/predictions_out_of_folds.csv",
+    "metric_name": "logloss",
+    "final_loss": "0.0807352687136972",
+    "train_time": 41.061665058135986,
+    "is_stacked": false,
+    "joblib_version": "1.5.0",
+    "threshold": 0.4792635440826416,
+    "single_prediction_time": 0.15410065650939941
+}

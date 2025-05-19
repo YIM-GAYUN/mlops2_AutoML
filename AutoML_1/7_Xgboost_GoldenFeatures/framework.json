@@ -1,0 +1,1078 @@
+{
+    "uid": "e61617a3-9b8d-4c8a-b0b3-63dbfb205407",
+    "name": "7_Xgboost_GoldenFeatures",
+    "preprocessing": [
+        {
+            "categorical": [
+                {
+                    "convert_method": "categorical_to_int",
+                    "convert_params": {
+                        "gender_Female": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "gender_Male": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "gender_Other": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "smoking_history_No Info": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "smoking_history_current": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "smoking_history_ever": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "smoking_history_former": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "smoking_history_never": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "smoking_history_not current": {
+                            "False": 0,
+                            "True": 1
+                        }
+                    },
+                    "columns": [
+                        "gender_Female",
+                        "gender_Male",
+                        "gender_Other",
+                        "smoking_history_No Info",
+                        "smoking_history_current",
+                        "smoking_history_ever",
+                        "smoking_history_former",
+                        "smoking_history_never",
+                        "smoking_history_not current"
+                    ]
+                }
+            ],
+            "golden_features": {
+                "new_features": [
+                    {
+                        "feature1": "blood_glucose_level",
+                        "feature2": "HbA1c_level",
+                        "operation": "multiply",
+                        "score": 0.1428440357
+                    },
+                    {
+                        "feature1": "HbA1c_level",
+                        "feature2": "heart_disease",
+                        "operation": "sum",
+                        "score": 0.1667902219
+                    },
+                    {
+                        "feature1": "HbA1c_level",
+                        "feature2": "hypertension",
+                        "operation": "sum",
+                        "score": 0.1704110189
+                    },
+                    {
+                        "feature1": "heart_disease",
+                        "feature2": "HbA1c_level",
+                        "operation": "diff",
+                        "score": 0.1711445852
+                    },
+                    {
+                        "feature1": "HbA1c_level",
+                        "feature2": "blood_glucose_level",
+                        "operation": "diff",
+                        "score": 0.172590773
+                    },
+                    {
+                        "feature1": "blood_glucose_level",
+                        "feature2": "HbA1c_level",
+                        "operation": "sum",
+                        "score": 0.1738361061
+                    },
+                    {
+                        "feature1": "hypertension",
+                        "feature2": "HbA1c_level",
+                        "operation": "diff",
+                        "score": 0.1783428993
+                    },
+                    {
+                        "feature1": "blood_glucose_level",
+                        "feature2": "age",
+                        "operation": "sum",
+                        "score": 0.1796800031
+                    },
+                    {
+                        "feature1": "blood_glucose_level",
+                        "feature2": "hypertension",
+                        "operation": "sum",
+                        "score": 0.1800206552
+                    },
+                    {
+                        "feature1": "heart_disease",
+                        "feature2": "blood_glucose_level",
+                        "operation": "diff",
+                        "score": 0.1802890819
+                    }
+                ],
+                "new_columns": [
+                    "blood_glucose_level_multiply_HbA1c_level",
+                    "HbA1c_level_sum_heart_disease",
+                    "HbA1c_level_sum_hypertension",
+                    "heart_disease_diff_HbA1c_level",
+                    "HbA1c_level_diff_blood_glucose_level",
+                    "blood_glucose_level_sum_HbA1c_level",
+                    "hypertension_diff_HbA1c_level",
+                    "blood_glucose_level_sum_age",
+                    "blood_glucose_level_sum_hypertension",
+                    "heart_disease_diff_blood_glucose_level"
+                ],
+                "ml_task": "binary_classification"
+            },
+            "ml_task": "binary_classification",
+            "params": {
+                "columns_preprocessing": {
+                    "gender_Female": [
+                        "categorical_to_int"
+                    ],
+                    "gender_Male": [
+                        "categorical_to_int"
+                    ],
+                    "gender_Other": [
+                        "categorical_to_int"
+                    ],
+                    "smoking_history_No Info": [
+                        "categorical_to_int"
+                    ],
+                    "smoking_history_current": [
+                        "categorical_to_int"
+                    ],
+                    "smoking_history_ever": [
+                        "categorical_to_int"
+                    ],
+                    "smoking_history_former": [
+                        "categorical_to_int"
+                    ],
+                    "smoking_history_never": [
+                        "categorical_to_int"
+                    ],
+                    "smoking_history_not current": [
+                        "categorical_to_int"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude"
+                ],
+                "ml_task": "binary_classification",
+                "golden_features": {
+                    "results_path": "AutoML_1",
+                    "ml_task": "binary_classification",
+                    "n_jobs": -1
+                }
+            }
+        },
+        {
+            "categorical": [
+                {
+                    "convert_method": "categorical_to_int",
+                    "convert_params": {
+                        "gender_Female": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "gender_Male": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "gender_Other": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "smoking_history_No Info": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "smoking_history_current": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "smoking_history_ever": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "smoking_history_former": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "smoking_history_never": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "smoking_history_not current": {
+                            "False": 0,
+                            "True": 1
+                        }
+                    },
+                    "columns": [
+                        "gender_Female",
+                        "gender_Male",
+                        "gender_Other",
+                        "smoking_history_No Info",
+                        "smoking_history_current",
+                        "smoking_history_ever",
+                        "smoking_history_former",
+                        "smoking_history_never",
+                        "smoking_history_not current"
+                    ]
+                }
+            ],
+            "golden_features": {
+                "new_features": [
+                    {
+                        "feature1": "blood_glucose_level",
+                        "feature2": "HbA1c_level",
+                        "operation": "multiply",
+                        "score": 0.1428440357
+                    },
+                    {
+                        "feature1": "HbA1c_level",
+                        "feature2": "heart_disease",
+                        "operation": "sum",
+                        "score": 0.1667902219
+                    },
+                    {
+                        "feature1": "HbA1c_level",
+                        "feature2": "hypertension",
+                        "operation": "sum",
+                        "score": 0.1704110189
+                    },
+                    {
+                        "feature1": "heart_disease",
+                        "feature2": "HbA1c_level",
+                        "operation": "diff",
+                        "score": 0.1711445852
+                    },
+                    {
+                        "feature1": "HbA1c_level",
+                        "feature2": "blood_glucose_level",
+                        "operation": "diff",
+                        "score": 0.172590773
+                    },
+                    {
+                        "feature1": "blood_glucose_level",
+                        "feature2": "HbA1c_level",
+                        "operation": "sum",
+                        "score": 0.1738361061
+                    },
+                    {
+                        "feature1": "hypertension",
+                        "feature2": "HbA1c_level",
+                        "operation": "diff",
+                        "score": 0.1783428993
+                    },
+                    {
+                        "feature1": "blood_glucose_level",
+                        "feature2": "age",
+                        "operation": "sum",
+                        "score": 0.1796800031
+                    },
+                    {
+                        "feature1": "blood_glucose_level",
+                        "feature2": "hypertension",
+                        "operation": "sum",
+                        "score": 0.1800206552
+                    },
+                    {
+                        "feature1": "heart_disease",
+                        "feature2": "blood_glucose_level",
+                        "operation": "diff",
+                        "score": 0.1802890819
+                    }
+                ],
+                "new_columns": [
+                    "blood_glucose_level_multiply_HbA1c_level",
+                    "HbA1c_level_sum_heart_disease",
+                    "HbA1c_level_sum_hypertension",
+                    "heart_disease_diff_HbA1c_level",
+                    "HbA1c_level_diff_blood_glucose_level",
+                    "blood_glucose_level_sum_HbA1c_level",
+                    "hypertension_diff_HbA1c_level",
+                    "blood_glucose_level_sum_age",
+                    "blood_glucose_level_sum_hypertension",
+                    "heart_disease_diff_blood_glucose_level"
+                ],
+                "ml_task": "binary_classification"
+            },
+            "ml_task": "binary_classification",
+            "params": {
+                "columns_preprocessing": {
+                    "gender_Female": [
+                        "categorical_to_int"
+                    ],
+                    "gender_Male": [
+                        "categorical_to_int"
+                    ],
+                    "gender_Other": [
+                        "categorical_to_int"
+                    ],
+                    "smoking_history_No Info": [
+                        "categorical_to_int"
+                    ],
+                    "smoking_history_current": [
+                        "categorical_to_int"
+                    ],
+                    "smoking_history_ever": [
+                        "categorical_to_int"
+                    ],
+                    "smoking_history_former": [
+                        "categorical_to_int"
+                    ],
+                    "smoking_history_never": [
+                        "categorical_to_int"
+                    ],
+                    "smoking_history_not current": [
+                        "categorical_to_int"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude"
+                ],
+                "ml_task": "binary_classification",
+                "golden_features": {
+                    "results_path": "AutoML_1",
+                    "ml_task": "binary_classification",
+                    "n_jobs": -1
+                }
+            }
+        },
+        {
+            "categorical": [
+                {
+                    "convert_method": "categorical_to_int",
+                    "convert_params": {
+                        "gender_Female": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "gender_Male": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "gender_Other": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "smoking_history_No Info": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "smoking_history_current": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "smoking_history_ever": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "smoking_history_former": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "smoking_history_never": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "smoking_history_not current": {
+                            "False": 0,
+                            "True": 1
+                        }
+                    },
+                    "columns": [
+                        "gender_Female",
+                        "gender_Male",
+                        "gender_Other",
+                        "smoking_history_No Info",
+                        "smoking_history_current",
+                        "smoking_history_ever",
+                        "smoking_history_former",
+                        "smoking_history_never",
+                        "smoking_history_not current"
+                    ]
+                }
+            ],
+            "golden_features": {
+                "new_features": [
+                    {
+                        "feature1": "blood_glucose_level",
+                        "feature2": "HbA1c_level",
+                        "operation": "multiply",
+                        "score": 0.1428440357
+                    },
+                    {
+                        "feature1": "HbA1c_level",
+                        "feature2": "heart_disease",
+                        "operation": "sum",
+                        "score": 0.1667902219
+                    },
+                    {
+                        "feature1": "HbA1c_level",
+                        "feature2": "hypertension",
+                        "operation": "sum",
+                        "score": 0.1704110189
+                    },
+                    {
+                        "feature1": "heart_disease",
+                        "feature2": "HbA1c_level",
+                        "operation": "diff",
+                        "score": 0.1711445852
+                    },
+                    {
+                        "feature1": "HbA1c_level",
+                        "feature2": "blood_glucose_level",
+                        "operation": "diff",
+                        "score": 0.172590773
+                    },
+                    {
+                        "feature1": "blood_glucose_level",
+                        "feature2": "HbA1c_level",
+                        "operation": "sum",
+                        "score": 0.1738361061
+                    },
+                    {
+                        "feature1": "hypertension",
+                        "feature2": "HbA1c_level",
+                        "operation": "diff",
+                        "score": 0.1783428993
+                    },
+                    {
+                        "feature1": "blood_glucose_level",
+                        "feature2": "age",
+                        "operation": "sum",
+                        "score": 0.1796800031
+                    },
+                    {
+                        "feature1": "blood_glucose_level",
+                        "feature2": "hypertension",
+                        "operation": "sum",
+                        "score": 0.1800206552
+                    },
+                    {
+                        "feature1": "heart_disease",
+                        "feature2": "blood_glucose_level",
+                        "operation": "diff",
+                        "score": 0.1802890819
+                    }
+                ],
+                "new_columns": [
+                    "blood_glucose_level_multiply_HbA1c_level",
+                    "HbA1c_level_sum_heart_disease",
+                    "HbA1c_level_sum_hypertension",
+                    "heart_disease_diff_HbA1c_level",
+                    "HbA1c_level_diff_blood_glucose_level",
+                    "blood_glucose_level_sum_HbA1c_level",
+                    "hypertension_diff_HbA1c_level",
+                    "blood_glucose_level_sum_age",
+                    "blood_glucose_level_sum_hypertension",
+                    "heart_disease_diff_blood_glucose_level"
+                ],
+                "ml_task": "binary_classification"
+            },
+            "ml_task": "binary_classification",
+            "params": {
+                "columns_preprocessing": {
+                    "gender_Female": [
+                        "categorical_to_int"
+                    ],
+                    "gender_Male": [
+                        "categorical_to_int"
+                    ],
+                    "gender_Other": [
+                        "categorical_to_int"
+                    ],
+                    "smoking_history_No Info": [
+                        "categorical_to_int"
+                    ],
+                    "smoking_history_current": [
+                        "categorical_to_int"
+                    ],
+                    "smoking_history_ever": [
+                        "categorical_to_int"
+                    ],
+                    "smoking_history_former": [
+                        "categorical_to_int"
+                    ],
+                    "smoking_history_never": [
+                        "categorical_to_int"
+                    ],
+                    "smoking_history_not current": [
+                        "categorical_to_int"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude"
+                ],
+                "ml_task": "binary_classification",
+                "golden_features": {
+                    "results_path": "AutoML_1",
+                    "ml_task": "binary_classification",
+                    "n_jobs": -1
+                }
+            }
+        },
+        {
+            "categorical": [
+                {
+                    "convert_method": "categorical_to_int",
+                    "convert_params": {
+                        "gender_Female": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "gender_Male": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "gender_Other": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "smoking_history_No Info": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "smoking_history_current": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "smoking_history_ever": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "smoking_history_former": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "smoking_history_never": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "smoking_history_not current": {
+                            "False": 0,
+                            "True": 1
+                        }
+                    },
+                    "columns": [
+                        "gender_Female",
+                        "gender_Male",
+                        "gender_Other",
+                        "smoking_history_No Info",
+                        "smoking_history_current",
+                        "smoking_history_ever",
+                        "smoking_history_former",
+                        "smoking_history_never",
+                        "smoking_history_not current"
+                    ]
+                }
+            ],
+            "golden_features": {
+                "new_features": [
+                    {
+                        "feature1": "blood_glucose_level",
+                        "feature2": "HbA1c_level",
+                        "operation": "multiply",
+                        "score": 0.1428440357
+                    },
+                    {
+                        "feature1": "HbA1c_level",
+                        "feature2": "heart_disease",
+                        "operation": "sum",
+                        "score": 0.1667902219
+                    },
+                    {
+                        "feature1": "HbA1c_level",
+                        "feature2": "hypertension",
+                        "operation": "sum",
+                        "score": 0.1704110189
+                    },
+                    {
+                        "feature1": "heart_disease",
+                        "feature2": "HbA1c_level",
+                        "operation": "diff",
+                        "score": 0.1711445852
+                    },
+                    {
+                        "feature1": "HbA1c_level",
+                        "feature2": "blood_glucose_level",
+                        "operation": "diff",
+                        "score": 0.172590773
+                    },
+                    {
+                        "feature1": "blood_glucose_level",
+                        "feature2": "HbA1c_level",
+                        "operation": "sum",
+                        "score": 0.1738361061
+                    },
+                    {
+                        "feature1": "hypertension",
+                        "feature2": "HbA1c_level",
+                        "operation": "diff",
+                        "score": 0.1783428993
+                    },
+                    {
+                        "feature1": "blood_glucose_level",
+                        "feature2": "age",
+                        "operation": "sum",
+                        "score": 0.1796800031
+                    },
+                    {
+                        "feature1": "blood_glucose_level",
+                        "feature2": "hypertension",
+                        "operation": "sum",
+                        "score": 0.1800206552
+                    },
+                    {
+                        "feature1": "heart_disease",
+                        "feature2": "blood_glucose_level",
+                        "operation": "diff",
+                        "score": 0.1802890819
+                    }
+                ],
+                "new_columns": [
+                    "blood_glucose_level_multiply_HbA1c_level",
+                    "HbA1c_level_sum_heart_disease",
+                    "HbA1c_level_sum_hypertension",
+                    "heart_disease_diff_HbA1c_level",
+                    "HbA1c_level_diff_blood_glucose_level",
+                    "blood_glucose_level_sum_HbA1c_level",
+                    "hypertension_diff_HbA1c_level",
+                    "blood_glucose_level_sum_age",
+                    "blood_glucose_level_sum_hypertension",
+                    "heart_disease_diff_blood_glucose_level"
+                ],
+                "ml_task": "binary_classification"
+            },
+            "ml_task": "binary_classification",
+            "params": {
+                "columns_preprocessing": {
+                    "gender_Female": [
+                        "categorical_to_int"
+                    ],
+                    "gender_Male": [
+                        "categorical_to_int"
+                    ],
+                    "gender_Other": [
+                        "categorical_to_int"
+                    ],
+                    "smoking_history_No Info": [
+                        "categorical_to_int"
+                    ],
+                    "smoking_history_current": [
+                        "categorical_to_int"
+                    ],
+                    "smoking_history_ever": [
+                        "categorical_to_int"
+                    ],
+                    "smoking_history_former": [
+                        "categorical_to_int"
+                    ],
+                    "smoking_history_never": [
+                        "categorical_to_int"
+                    ],
+                    "smoking_history_not current": [
+                        "categorical_to_int"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude"
+                ],
+                "ml_task": "binary_classification",
+                "golden_features": {
+                    "results_path": "AutoML_1",
+                    "ml_task": "binary_classification",
+                    "n_jobs": -1
+                }
+            }
+        },
+        {
+            "categorical": [
+                {
+                    "convert_method": "categorical_to_int",
+                    "convert_params": {
+                        "gender_Female": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "gender_Male": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "gender_Other": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "smoking_history_No Info": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "smoking_history_current": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "smoking_history_ever": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "smoking_history_former": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "smoking_history_never": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "smoking_history_not current": {
+                            "False": 0,
+                            "True": 1
+                        }
+                    },
+                    "columns": [
+                        "gender_Female",
+                        "gender_Male",
+                        "gender_Other",
+                        "smoking_history_No Info",
+                        "smoking_history_current",
+                        "smoking_history_ever",
+                        "smoking_history_former",
+                        "smoking_history_never",
+                        "smoking_history_not current"
+                    ]
+                }
+            ],
+            "golden_features": {
+                "new_features": [
+                    {
+                        "feature1": "blood_glucose_level",
+                        "feature2": "HbA1c_level",
+                        "operation": "multiply",
+                        "score": 0.1428440357
+                    },
+                    {
+                        "feature1": "HbA1c_level",
+                        "feature2": "heart_disease",
+                        "operation": "sum",
+                        "score": 0.1667902219
+                    },
+                    {
+                        "feature1": "HbA1c_level",
+                        "feature2": "hypertension",
+                        "operation": "sum",
+                        "score": 0.1704110189
+                    },
+                    {
+                        "feature1": "heart_disease",
+                        "feature2": "HbA1c_level",
+                        "operation": "diff",
+                        "score": 0.1711445852
+                    },
+                    {
+                        "feature1": "HbA1c_level",
+                        "feature2": "blood_glucose_level",
+                        "operation": "diff",
+                        "score": 0.172590773
+                    },
+                    {
+                        "feature1": "blood_glucose_level",
+                        "feature2": "HbA1c_level",
+                        "operation": "sum",
+                        "score": 0.1738361061
+                    },
+                    {
+                        "feature1": "hypertension",
+                        "feature2": "HbA1c_level",
+                        "operation": "diff",
+                        "score": 0.1783428993
+                    },
+                    {
+                        "feature1": "blood_glucose_level",
+                        "feature2": "age",
+                        "operation": "sum",
+                        "score": 0.1796800031
+                    },
+                    {
+                        "feature1": "blood_glucose_level",
+                        "feature2": "hypertension",
+                        "operation": "sum",
+                        "score": 0.1800206552
+                    },
+                    {
+                        "feature1": "heart_disease",
+                        "feature2": "blood_glucose_level",
+                        "operation": "diff",
+                        "score": 0.1802890819
+                    }
+                ],
+                "new_columns": [
+                    "blood_glucose_level_multiply_HbA1c_level",
+                    "HbA1c_level_sum_heart_disease",
+                    "HbA1c_level_sum_hypertension",
+                    "heart_disease_diff_HbA1c_level",
+                    "HbA1c_level_diff_blood_glucose_level",
+                    "blood_glucose_level_sum_HbA1c_level",
+                    "hypertension_diff_HbA1c_level",
+                    "blood_glucose_level_sum_age",
+                    "blood_glucose_level_sum_hypertension",
+                    "heart_disease_diff_blood_glucose_level"
+                ],
+                "ml_task": "binary_classification"
+            },
+            "ml_task": "binary_classification",
+            "params": {
+                "columns_preprocessing": {
+                    "gender_Female": [
+                        "categorical_to_int"
+                    ],
+                    "gender_Male": [
+                        "categorical_to_int"
+                    ],
+                    "gender_Other": [
+                        "categorical_to_int"
+                    ],
+                    "smoking_history_No Info": [
+                        "categorical_to_int"
+                    ],
+                    "smoking_history_current": [
+                        "categorical_to_int"
+                    ],
+                    "smoking_history_ever": [
+                        "categorical_to_int"
+                    ],
+                    "smoking_history_former": [
+                        "categorical_to_int"
+                    ],
+                    "smoking_history_never": [
+                        "categorical_to_int"
+                    ],
+                    "smoking_history_not current": [
+                        "categorical_to_int"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude"
+                ],
+                "ml_task": "binary_classification",
+                "golden_features": {
+                    "results_path": "AutoML_1",
+                    "ml_task": "binary_classification",
+                    "n_jobs": -1
+                }
+            }
+        }
+    ],
+    "learners": [
+        {
+            "library_version": "3.0.0",
+            "algorithm_name": "Extreme Gradient Boosting",
+            "algorithm_short_name": "Xgboost",
+            "uid": "ca63eb99-3019-4182-823b-fdfda7e75a0d",
+            "params": {
+                "model_type": "Xgboost",
+                "ml_task": "binary_classification",
+                "n_jobs": -1,
+                "seed": 1236,
+                "objective": "binary:logistic",
+                "eta": 0.1,
+                "max_depth": 8,
+                "min_child_weight": 1,
+                "subsample": 1.0,
+                "colsample_bytree": 1.0,
+                "eval_metric": "logloss",
+                "explain_level": 1
+            },
+            "name": "learner_fold_0"
+        },
+        {
+            "library_version": "3.0.0",
+            "algorithm_name": "Extreme Gradient Boosting",
+            "algorithm_short_name": "Xgboost",
+            "uid": "67c4a1a6-202b-4e79-b578-35e5522021d8",
+            "params": {
+                "model_type": "Xgboost",
+                "ml_task": "binary_classification",
+                "n_jobs": -1,
+                "seed": 1236,
+                "objective": "binary:logistic",
+                "eta": 0.1,
+                "max_depth": 8,
+                "min_child_weight": 1,
+                "subsample": 1.0,
+                "colsample_bytree": 1.0,
+                "eval_metric": "logloss",
+                "explain_level": 1
+            },
+            "name": "learner_fold_1"
+        },
+        {
+            "library_version": "3.0.0",
+            "algorithm_name": "Extreme Gradient Boosting",
+            "algorithm_short_name": "Xgboost",
+            "uid": "490883a9-6729-4b99-84b8-fc92350ca07d",
+            "params": {
+                "model_type": "Xgboost",
+                "ml_task": "binary_classification",
+                "n_jobs": -1,
+                "seed": 1236,
+                "objective": "binary:logistic",
+                "eta": 0.1,
+                "max_depth": 8,
+                "min_child_weight": 1,
+                "subsample": 1.0,
+                "colsample_bytree": 1.0,
+                "eval_metric": "logloss",
+                "explain_level": 1
+            },
+            "name": "learner_fold_2"
+        },
+        {
+            "library_version": "3.0.0",
+            "algorithm_name": "Extreme Gradient Boosting",
+            "algorithm_short_name": "Xgboost",
+            "uid": "8c235de7-90c0-479b-8cfe-a657cf553136",
+            "params": {
+                "model_type": "Xgboost",
+                "ml_task": "binary_classification",
+                "n_jobs": -1,
+                "seed": 1236,
+                "objective": "binary:logistic",
+                "eta": 0.1,
+                "max_depth": 8,
+                "min_child_weight": 1,
+                "subsample": 1.0,
+                "colsample_bytree": 1.0,
+                "eval_metric": "logloss",
+                "explain_level": 1
+            },
+            "name": "learner_fold_3"
+        },
+        {
+            "library_version": "3.0.0",
+            "algorithm_name": "Extreme Gradient Boosting",
+            "algorithm_short_name": "Xgboost",
+            "uid": "9cd5fbdf-efff-44c8-8c99-35cc4e4c6569",
+            "params": {
+                "model_type": "Xgboost",
+                "ml_task": "binary_classification",
+                "n_jobs": -1,
+                "seed": 1236,
+                "objective": "binary:logistic",
+                "eta": 0.1,
+                "max_depth": 8,
+                "min_child_weight": 1,
+                "subsample": 1.0,
+                "colsample_bytree": 1.0,
+                "eval_metric": "logloss",
+                "explain_level": 1
+            },
+            "name": "learner_fold_4"
+        }
+    ],
+    "params": {
+        "additional": {
+            "max_rounds": 10000,
+            "early_stopping_rounds": 50,
+            "max_rows_limit": null,
+            "max_cols_limit": null
+        },
+        "preprocessing": {
+            "columns_preprocessing": {
+                "gender_Female": [
+                    "categorical_to_int"
+                ],
+                "gender_Male": [
+                    "categorical_to_int"
+                ],
+                "gender_Other": [
+                    "categorical_to_int"
+                ],
+                "smoking_history_No Info": [
+                    "categorical_to_int"
+                ],
+                "smoking_history_current": [
+                    "categorical_to_int"
+                ],
+                "smoking_history_ever": [
+                    "categorical_to_int"
+                ],
+                "smoking_history_former": [
+                    "categorical_to_int"
+                ],
+                "smoking_history_never": [
+                    "categorical_to_int"
+                ],
+                "smoking_history_not current": [
+                    "categorical_to_int"
+                ]
+            },
+            "target_preprocessing": [
+                "na_exclude"
+            ],
+            "ml_task": "binary_classification",
+            "golden_features": {
+                "results_path": "AutoML_1",
+                "ml_task": "binary_classification",
+                "n_jobs": -1
+            }
+        },
+        "validation_strategy": {
+            "validation_type": "kfold",
+            "k_folds": 5,
+            "shuffle": true,
+            "stratify": true,
+            "X_path": "AutoML_1/X.data",
+            "y_path": "AutoML_1/y.data",
+            "results_path": "AutoML_1"
+        },
+        "learner": {
+            "model_type": "Xgboost",
+            "ml_task": "binary_classification",
+            "n_jobs": -1,
+            "seed": 1236,
+            "objective": "binary:logistic",
+            "eta": 0.1,
+            "max_depth": 8,
+            "min_child_weight": 1,
+            "subsample": 1.0,
+            "colsample_bytree": 1.0,
+            "eval_metric": "logloss",
+            "explain_level": 1
+        },
+        "automl_random_state": 1234,
+        "ml_task": "binary_classification",
+        "explain_level": 1,
+        "name": "7_Xgboost_GoldenFeatures",
+        "status": "initialized",
+        "final_loss": null,
+        "train_time": null,
+        "data_type": "original_golden_features",
+        "max_time_for_learner": 60
+    },
+    "saved": [
+        "7_Xgboost_GoldenFeatures/learner_fold_0.xgboost.json",
+        "7_Xgboost_GoldenFeatures/learner_fold_1.xgboost.json",
+        "7_Xgboost_GoldenFeatures/learner_fold_2.xgboost.json",
+        "7_Xgboost_GoldenFeatures/learner_fold_3.xgboost.json",
+        "7_Xgboost_GoldenFeatures/learner_fold_4.xgboost.json"
+    ],
+    "predictions_fname": "7_Xgboost_GoldenFeatures/predictions_out_of_folds.csv",
+    "metric_name": "logloss",
+    "final_loss": "0.07974091786291661",
+    "train_time": 34.64591598510742,
+    "is_stacked": false,
+    "joblib_version": "1.5.0",
+    "threshold": 0.49684399366378784,
+    "single_prediction_time": 0.21367168426513672
+}

@@ -1,0 +1,26 @@
+feature,mean_importance
+heart_disease_diff_HbA1c_level,-9.647064406988204e-05
+heart_disease,-8.773777570414698e-05
+smoking_history_never,-2.747505734769784e-05
+hypertension,-1.6089711335959267e-05
+smoking_history_current,-1.5414046273987126e-05
+smoking_history_not current,-9.948687758304375e-06
+gender_Other,0.0
+smoking_history_ever,3.4622127592337513e-06
+smoking_history_former,7.647286247217112e-06
+blood_glucose_level_sum_hypertension,2.0513671739014194e-05
+gender_Female,2.233101450496988e-05
+blood_glucose_level_sum_age,4.740459459867952e-05
+blood_glucose_level_sum_HbA1c_level,0.00017875339796001032
+hypertension_diff_HbA1c_level,0.00026260426777708343
+heart_disease_diff_blood_glucose_level,0.00028741977135491594
+gender_Male,0.00037432285115235054
+HbA1c_level_sum_hypertension,0.0010928715291546737
+HbA1c_level_sum_heart_disease,0.001109247772938146
+HbA1c_level_diff_blood_glucose_level,0.001440949334757341
+smoking_history_No Info,0.0015448178109051137
+bmi,0.00772697962514782
+age,0.022060454397585666
+blood_glucose_level,0.03557278354714818
+HbA1c_level,0.13822877096006944
+blood_glucose_level_multiply_HbA1c_level,0.20994645882548263

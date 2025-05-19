@@ -1,0 +1,77 @@
+{
+    "new_features": [
+        {
+            "feature1": "blood_glucose_level",
+            "feature2": "HbA1c_level",
+            "operation": "multiply",
+            "score": 0.1428440357
+        },
+        {
+            "feature1": "HbA1c_level",
+            "feature2": "heart_disease",
+            "operation": "sum",
+            "score": 0.1667902219
+        },
+        {
+            "feature1": "HbA1c_level",
+            "feature2": "hypertension",
+            "operation": "sum",
+            "score": 0.1704110189
+        },
+        {
+            "feature1": "heart_disease",
+            "feature2": "HbA1c_level",
+            "operation": "diff",
+            "score": 0.1711445852
+        },
+        {
+            "feature1": "HbA1c_level",
+            "feature2": "blood_glucose_level",
+            "operation": "diff",
+            "score": 0.172590773
+        },
+        {
+            "feature1": "blood_glucose_level",
+            "feature2": "HbA1c_level",
+            "operation": "sum",
+            "score": 0.1738361061
+        },
+        {
+            "feature1": "hypertension",
+            "feature2": "HbA1c_level",
+            "operation": "diff",
+            "score": 0.1783428993
+        },
+        {
+            "feature1": "blood_glucose_level",
+            "feature2": "age",
+            "operation": "sum",
+            "score": 0.1796800031
+        },
+        {
+            "feature1": "blood_glucose_level",
+            "feature2": "hypertension",
+            "operation": "sum",
+            "score": 0.1800206552
+        },
+        {
+            "feature1": "heart_disease",
+            "feature2": "blood_glucose_level",
+            "operation": "diff",
+            "score": 0.1802890819
+        }
+    ],
+    "new_columns": [
+        "blood_glucose_level_multiply_HbA1c_level",
+        "HbA1c_level_sum_heart_disease",
+        "HbA1c_level_sum_hypertension",
+        "heart_disease_diff_HbA1c_level",
+        "HbA1c_level_diff_blood_glucose_level",
+        "blood_glucose_level_sum_HbA1c_level",
+        "hypertension_diff_HbA1c_level",
+        "blood_glucose_level_sum_age",
+        "blood_glucose_level_sum_hypertension",
+        "heart_disease_diff_blood_glucose_level"
+    ],
+    "ml_task": "binary_classification"
+}

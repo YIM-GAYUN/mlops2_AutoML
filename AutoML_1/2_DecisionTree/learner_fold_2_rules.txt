@@ -1,0 +1,12 @@
+if (HbA1c_level <= 6.7) and (blood_glucose_level <= 210.0) and (age <= 51.5) and (bmi <= 32.645) then class: 0 (proba: 99.31%) | based on 34,396 samples
+
+if (HbA1c_level <= 6.7) and (blood_glucose_level <= 210.0) and (age > 51.5) and (HbA1c_level > 5.35) then class: 0 (proba: 89.33%) | based on 12,817 samples
+
+if (HbA1c_level <= 6.7) and (blood_glucose_level <= 210.0) and (age > 51.5) and (HbA1c_level <= 5.35) then class: 0 (proba: 100.0%) | based on 7,984 samples
+
+if (HbA1c_level <= 6.7) and (blood_glucose_level <= 210.0) and (age <= 51.5) and (bmi > 32.645) then class: 0 (proba: 96.13%) | based on 5,166 samples
+
+if (HbA1c_level > 6.7) then class: 1 (proba: 100.0%) | based on 2,490 samples
+
+if (HbA1c_level <= 6.7) and (blood_glucose_level > 210.0) then class: 1 (proba: 100.0%) | based on 1,147 samples
+

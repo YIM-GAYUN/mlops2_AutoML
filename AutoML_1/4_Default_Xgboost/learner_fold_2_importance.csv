@@ -1,0 +1,16 @@
+feature,mean_importance
+smoking_history_former,-2.3670261686048467e-05
+smoking_history_not current,-2.0945988843182328e-05
+smoking_history_never,-1.9513926343631137e-05
+smoking_history_current,-8.636895448177474e-06
+gender_Female,-8.331918893195179e-06
+gender_Other,0.0
+smoking_history_ever,2.4693722823337926e-05
+gender_Male,0.0008273512395246208
+heart_disease,0.0014252124922235292
+hypertension,0.0018192241362863792
+smoking_history_No Info,0.0018811633206708479
+bmi,0.008746108244566769
+age,0.02259817267072315
+blood_glucose_level,0.2616446109692034
+HbA1c_level,0.4421404644336013

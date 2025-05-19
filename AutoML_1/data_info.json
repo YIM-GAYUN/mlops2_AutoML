@@ -1,31 +1,30 @@
 {
     "columns": [
-        "gender",
         "age",
         "hypertension",
         "heart_disease",
-        "smoking_history",
         "bmi",
         "HbA1c_level",
-        "blood_glucose_level"
+        "blood_glucose_level",
+        "gender_Female",
+        "gender_Male",
+        "gender_Other",
+        "smoking_history_No Info",
+        "smoking_history_current",
+        "smoking_history_ever",
+        "smoking_history_former",
+        "smoking_history_never",
+        "smoking_history_not current"
     ],
     "rows": 80000,
-    "cols": 8,
+    "cols": 15,
     "target_is_numeric": true,
     "columns_info": {
-        "gender": [
-            "categorical",
-            "few_categories"
-        ],
         "age": [
             "scale"
         ],
         "hypertension": [],
         "heart_disease": [],
-        "smoking_history": [
-            "categorical",
-            "few_categories"
-        ],
         "bmi": [
             "scale"
         ],
@@ -34,10 +33,46 @@
         ],
         "blood_glucose_level": [
             "scale"
+        ],
+        "gender_Female": [
+            "categorical",
+            "few_categories"
+        ],
+        "gender_Male": [
+            "categorical",
+            "few_categories"
+        ],
+        "gender_Other": [
+            "categorical",
+            "few_categories"
+        ],
+        "smoking_history_No Info": [
+            "categorical",
+            "few_categories"
+        ],
+        "smoking_history_current": [
+            "categorical",
+            "few_categories"
+        ],
+        "smoking_history_ever": [
+            "categorical",
+            "few_categories"
+        ],
+        "smoking_history_former": [
+            "categorical",
+            "few_categories"
+        ],
+        "smoking_history_never": [
+            "categorical",
+            "few_categories"
+        ],
+        "smoking_history_not current": [
+            "categorical",
+            "few_categories"
         ]
     },
     "target_info": [],
-    "n_features": 8,
+    "n_features": 15,
     "is_sample_weighted": false,
     "is_fairness_applied": false,
     "n_classes": 2
